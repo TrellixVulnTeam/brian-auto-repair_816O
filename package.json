@@ -1,0 +1,26 @@
+{
+  "name": "brian-auto-repair",
+  "version": "1.0.0",
+  "description": "Car repair shop",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://skinny08910@bitbucket.org/nexgendev/brian-auto-repair.git"
+  },
+  "keywords": [
+    "Car Repair",
+    "Car",
+    "Cheap car",
+    "Vehicle"
+  ],
+  "author": "Nicksonder Examar",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nexgendev/brian-auto-repair#readme"
+}
