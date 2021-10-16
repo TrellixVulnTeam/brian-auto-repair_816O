@@ -1,0 +1,106 @@
+.header {
+  // Top Nav
+  &__top-nav {
+    background: rgb(202, 202, 202);
+  }
+
+  &__top-nav-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  &__phone-number {
+    width: 12%;
+    padding: 0.6rem 0;
+    border-right: 1px rgb(180, 180, 180) solid;
+    border-left: 1px rgb(180, 180, 180) solid;
+
+    a {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: grey;
+      transition: all 0.3s ease-in-out;
+
+      .fa-phone-alt {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        border-bottom: 1px grey solid;
+      }
+    }
+  }
+
+  &__social-media {
+    width: 5%;
+    padding: 0.6rem 0;
+    border-right: 1px rgb(180, 180, 180) solid;
+
+    a {
+      color: grey;
+      font-size: 0.9rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: rgb(107, 107, 107);
+      }
+    }
+  }
+
+  &__mail {
+    width: 20%;
+    padding: 0.6rem 0;
+    border-right: 1px rgb(180, 180, 180) solid;
+
+    a {
+      color: grey;
+      font-size: 0.9rem;
+      transition: all 0.3s ease-in-out;
+
+      .fa-envelope {
+        margin-right: 0.5rem;
+      }
+
+      &:hover {
+        color: rgb(107, 107, 107);
+      }
+    }
+  }
+
+  // Botom Nav
+  &__bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  &__logo {
+    width: 35%;
+    font-size: 1.9rem;
+    font-weight: 900;
+
+    a {
+      text-transform: uppercase;
+      color: #002ea1;
+    }
+  }
+
+  &__nav-links {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    color: grey;
+    transition: all 0.3s ease-in-out;
+    font-weight: 400;
+
+    &:hover {
+      color: #002ea1;
+    }
+  }
+}
