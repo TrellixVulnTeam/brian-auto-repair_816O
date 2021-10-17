@@ -1,5 +1,5 @@
 .header__top-nav {
-  background: #cacaca; }
+  background: #ebebeb; }
 
 .header__top-nav-wrapper {
   display: flex;
@@ -7,43 +7,46 @@
   text-align: center; }
 
 .header__phone-number {
-  width: 12%;
-  padding: 0.6rem 0;
-  border-right: 1px #b4b4b4 solid;
-  border-left: 1px #b4b4b4 solid; }
+  padding: 1rem;
+  border-right: 1px #dbdbdb solid;
+  border-left: 1px #dbdbdb solid; }
+  .header__phone-number .fa-phone-alt {
+    color: grey;
+    font-size: 0.9rem;
+    margin-right: 0.5rem; }
   .header__phone-number a {
     font-size: 0.9rem;
     font-weight: 300;
     color: grey;
     transition: all 0.3s ease-in-out; }
-    .header__phone-number a .fa-phone-alt {
-      margin-right: 0.5rem; }
     .header__phone-number a:hover {
       border-bottom: 1px grey solid; }
 
 .header__social-media {
-  width: 5%;
-  padding: 0.6rem 0;
-  border-right: 1px #b4b4b4 solid; }
+  padding: 1rem;
+  border-right: 1px #dbdbdb solid; }
   .header__social-media a {
     color: grey;
     font-size: 0.9rem;
     transition: all 0.3s ease-in-out; }
+    .header__social-media a .fa-facebook-f {
+      color: grey; }
     .header__social-media a:hover {
       color: #6b6b6b; }
 
 .header__mail {
-  width: 20%;
-  padding: 0.6rem 0;
-  border-right: 1px #b4b4b4 solid; }
+  padding: 1rem;
+  border-right: 1px #dbdbdb solid; }
+  .header__mail .fa-envelope {
+    color: grey;
+    font-size: 0.9rem;
+    margin-right: 0.5rem; }
   .header__mail a {
     color: grey;
     font-size: 0.9rem;
     transition: all 0.3s ease-in-out; }
-    .header__mail a .fa-envelope {
-      margin-right: 0.5rem; }
     .header__mail a:hover {
-      color: #6b6b6b; }
+      border-bottom: 1px grey solid; }
 
 .header__bottom-nav {
   display: flex;
@@ -52,10 +55,10 @@
   padding: 2rem 0; }
 
 .header__logo {
-  width: 35%;
-  font-size: 1.9rem;
-  font-weight: 900; }
+  width: 35%; }
   .header__logo a {
+    font-size: 1.9rem;
+    font-weight: 800;
     text-transform: uppercase;
     color: #002ea1; }
 
@@ -71,6 +74,101 @@
   font-weight: 400; }
   .header__link:hover {
     color: #002ea1; }
+
+.jumbo {
+  background-image: url("../img/jumbo-img.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/jumbo-img.jpeg") no-repeat bottom center;
+  background-size: cover;
+  height: 600px; }
+  .jumbo__info-box {
+    color: #fff;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; }
+  .jumbo__title {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+  .jumbo__text {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem; }
+  .jumbo__btn {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    border: 1px #fff solid;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; }
+    .jumbo__btn:hover {
+      border: 1px #002ea1 solid;
+      background-color: #002ea1; }
+
+.choose-us {
+  padding: 5rem 0; }
+  .choose-us__big-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem; }
+    .choose-us__big-title hr {
+      background-color: #002ea1;
+      width: 10%;
+      height: 4px;
+      margin: 1.5rem auto 0; }
+  .choose-us__main-text {
+    color: #252525;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.9rem;
+    margin-bottom: 2.5rem; }
+  .choose-us__info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; }
+  .choose-us__info-box {
+    text-align: center;
+    padding: 1.5rem 0; }
+  .choose-us__icon {
+    text-align: center;
+    margin-bottom: 2rem; }
+    .choose-us__icon .fas {
+      font-size: 4rem;
+      color: #002ea1; }
+  .choose-us__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem; }
+    .choose-us__title hr {
+      background-color: #002ea1;
+      width: 10%;
+      height: 4px;
+      margin: 1.5rem auto 0; }
+  .choose-us__text {
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+  .choose-us .vehicle-serviced {
+    padding: 5rem 0; }
+    .choose-us .vehicle-serviced .vehicle-serviced__grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-color: skyblue; }
 
 a {
   text-decoration: none; }
