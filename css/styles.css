@@ -101,7 +101,6 @@
     font-size: 1.2rem;
     margin-bottom: 2.5rem; }
   .jumbo__btn {
-    color: #fff;
     display: block;
     text-align: center;
     font-size: 1rem;
@@ -110,6 +109,8 @@
     border: 1px #fff solid;
     cursor: pointer;
     transition: all 0.3s ease-in-out; }
+    .jumbo__btn a {
+      color: #fff; }
     .jumbo__btn:hover {
       border: 1px #002ea1 solid;
       background-color: #002ea1; }
@@ -163,12 +164,192 @@
   .choose-us__text {
     font-size: 0.9rem;
     line-height: 1.5rem; }
-  .choose-us .vehicle-serviced {
-    padding: 5rem 0; }
-    .choose-us .vehicle-serviced .vehicle-serviced__grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      background-color: skyblue; }
+
+.vehicle-serviced {
+  padding: 4rem 0; }
+  .vehicle-serviced__grid-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ebebeb; }
+  .vehicle-serviced__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 600px;
+    align-items: center;
+    width: 100%; }
+  .vehicle-serviced__info-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    grid-column: 1/5;
+    margin-left: 3rem; }
+  .vehicle-serviced__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem; }
+    .vehicle-serviced__title hr {
+      background-color: #002ea1;
+      width: 10%;
+      height: 4px;
+      margin: 1.5rem auto 0; }
+  .vehicle-serviced__text {
+    color: #252525;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.9rem;
+    margin-bottom: 2.5rem; }
+  .vehicle-serviced__make-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2rem; }
+  .vehicle-serviced__make-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; }
+  .vehicle-serviced__make {
+    font-size: 0.9rem;
+    font-weight: 300; }
+    .vehicle-serviced__make .fas {
+      margin-right: 0.5rem;
+      color: #002ea1; }
+  .vehicle-serviced__make:not(:last-child) {
+    margin-bottom: 1rem; }
+  .vehicle-serviced__btn {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    border: 1px grey solid;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out; }
+    .vehicle-serviced__btn a {
+      color: #002ea1;
+      transition: all 0.3s ease-in-out; }
+    .vehicle-serviced__btn:hover {
+      border: 1px #002ea1 solid;
+      background-color: #002ea1; }
+      .vehicle-serviced__btn:hover a {
+        color: #fff; }
+  .vehicle-serviced__img {
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/vehicle-serviced-img.jpeg");
+    background: url("../img/vehicle-serviced-img.jpeg") no-repeat bottom center;
+    background-size: cover;
+    grid-column: 5/9; }
+
+.brand__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto; }
+
+.brand__individual-brand img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: center; }
+
+.footer {
+  color: #fff;
+  background-color: #535353;
+  padding: 4rem 0; }
+  .footer__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid #949494; }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__boxes .fas,
+    .footer__boxes .far {
+      color: grey;
+      font-size: 2.5rem;
+      margin-right: 1.5rem; }
+    .footer__boxes div {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.8rem; }
+  .footer__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem; }
+  .footer__box {
+    width: 25%; }
+    .footer__box .footer__title {
+      display: block;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem; }
+      .footer__box .footer__title hr {
+        background-color: #949494;
+        width: 10%;
+        margin: 1rem 0 0 0;
+        padding: 0; }
+    .footer__box .footer__details {
+      color: #fff;
+      display: flex;
+      font-size: 0.9rem;
+      justify-content: flex-start;
+      align-items: center;
+      line-height: 1.8rem; }
+      .footer__box .footer__details span {
+        margin-left: 4.5rem; }
+      .footer__box .footer__details .fab {
+        color: grey;
+        transition: all 0.3s ease-in-out; }
+      .footer__box .footer__details--social-link a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        padding: 2rem;
+        border: 1px solid grey;
+        margin-top: 1rem;
+        transition: all 0.3s ease-in-out; }
+        .footer__box .footer__details--social-link a:hover {
+          color: #fff;
+          border: 1px solid #fff; }
+          .footer__box .footer__details--social-link a:hover .fab {
+            color: #fff; }
+      .footer__box .footer__details--time {
+        display: flex;
+        flex-direction: column; }
+        .footer__box .footer__details--time li {
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+          font-size: 0.9rem;
+          line-height: 1.8rem; }
+          .footer__box .footer__details--time li span {
+            color: #fff; }
+      .footer__box .footer__details a {
+        color: #fff; }
+      .footer__box .footer__details span {
+        color: #fff; }
+      .footer__box .footer__details .fas,
+      .footer__box .footer__details .far {
+        color: grey;
+        margin-right: 1.5rem; }
+      .footer__box .footer__details div {
+        color: #fff; }
 
 a {
   text-decoration: none; }
