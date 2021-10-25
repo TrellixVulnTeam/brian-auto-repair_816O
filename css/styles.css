@@ -240,6 +240,45 @@
   .services__img img {
     width: 100%; }
 
+.review {
+  margin-bottom: 3rem; }
+  .review__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #ebebeb;
+    padding: 2rem 0;
+    margin-bottom: 3rem; }
+  .review__title-text {
+    margin-left: 20%; }
+  .review__top-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 4rem; }
+  .review__bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 2rem; }
+  .review__text {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+  .review__name {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem; }
+  .review__text:not(:last-child) {
+    margin-bottom: 2rem; }
+  .review__img {
+    text-align: center; }
+    .review__img img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center; }
+
 a {
   text-decoration: none; }
 

@@ -1,0 +1,61 @@
+@import "../sass/variables";
+
+// Reviews ---------/
+
+.review {
+  margin-bottom: 3rem;
+
+  &__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: $light-grey;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+  }
+
+  &__title-text {
+    margin-left: 20%;
+  }
+
+  &__top-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 4rem;
+  }
+
+  &__bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    text-align: center;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
