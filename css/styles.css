@@ -185,7 +185,7 @@
 .about {
   margin-bottom: 3rem; }
   .about__title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     background-color: #ebebeb;
     padding: 2rem 0;
@@ -208,6 +208,36 @@
   .about__text:not(:last-child) {
     margin-bottom: 2rem; }
   .about__img img {
+    width: 100%; }
+
+.services {
+  margin-bottom: 3rem; }
+  .services__title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #ebebeb;
+    padding: 2rem 0;
+    margin-bottom: 3rem; }
+  .services__title-text {
+    margin-left: 20%; }
+  .services__top-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 4rem; }
+  .services__bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-bottom: 2rem; }
+  .services__text {
+    font-size: 0.9rem;
+    line-height: 1.5rem; }
+  .services__text--bold {
+    font-weight: 700; }
+  .services__text:not(:last-child) {
+    margin-bottom: 2rem; }
+  .services__img img {
     width: 100%; }
 
 a {
