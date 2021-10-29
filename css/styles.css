@@ -58,7 +58,7 @@
     display: block;
     text-align: center;
     font-weight: 300;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     line-height: 1.9rem;
     margin-bottom: 2.5rem; }
@@ -190,6 +190,39 @@
     height: inherit;
     object-fit: cover;
     object-position: center; }
+
+@media only screen and (max-width: 600px) {
+  .jumbo {
+    height: 500px; }
+    .jumbo__info-box {
+      height: 500px; }
+    .jumbo__title {
+      text-align: center;
+      font-size: 2.5rem; }
+    .jumbo__text {
+      font-size: 1.1rem; }
+  .choose-us__big-title {
+    font-size: 2.2rem; }
+  .choose-us__main-text {
+    width: 100%; }
+  .choose-us__info-container {
+    display: flex;
+    flex-wrap: wrap; }
+  .choose-us__info-box .choose-us__icon .fas,
+  .choose-us__info-box .choose-us__icon .far {
+    font-size: 3rem; }
+  .choose-us__title {
+    font-size: 1rem;
+    font-weight: 600; }
+  .vehicle-serviced__grid-container {
+    flex-wrap: wrap; }
+  .vehicle-serviced__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .vehicle-serviced__img {
+    order: 1; }
+  .vehicle-serviced__info-box {
+    order: 2; } }
 
 .about {
   margin-bottom: 3rem; }
@@ -448,6 +481,9 @@ a {
     text-transform: uppercase;
     color: #001750; }
 
+.header__hamburger {
+  display: none; }
+
 .header__nav-links {
   width: 45%;
   display: flex;
@@ -460,6 +496,9 @@ a {
   font-weight: 400; }
   .header__link:hover {
     color: #002ea1; }
+
+.mobile-menu {
+  display: none; }
 
 .footer {
   color: #fff;
@@ -561,3 +600,49 @@ a {
   .copy__text {
     color: #949494;
     font-size: 0.9rem; }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; }
+  .header {
+    position: relative; }
+    .header__top-nav-wrapper {
+      display: flex;
+      flex-wrap: wrap; }
+    .header__logo {
+      width: 60%; }
+      .header__logo a {
+        font-size: 1.6rem; }
+    .header__nav-links {
+      display: none; }
+    .header__hamburger {
+      text-align: right;
+      width: 20%;
+      display: block;
+      cursor: pointer; }
+      .header__hamburger .fas {
+        font-size: 2rem;
+        color: grey;
+        transition: all 0.3s ease-in-out; }
+        .header__hamburger .fas:hover {
+          color: #001750; }
+  .mobile-menu {
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(100%, 0, 0); }
+    .mobile-menu--active {
+      transform: translate3d(0, 0, 0); }
+    .mobile-menu__link {
+      display: block;
+      transition: all 0.3s ease-in-out;
+      padding: 1rem; }
+      .mobile-menu__link:hover {
+        color: #001750; }
+    .mobile-menu__link:not(:last-child) {
+      border-bottom: 1px #ebebeb solid; } }

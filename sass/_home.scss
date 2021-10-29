@@ -86,7 +86,7 @@
     display: block;
     text-align: center;
     font-weight: 300;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     line-height: 1.9rem;
     margin-bottom: 2.5rem;
@@ -266,6 +266,75 @@
       height: inherit;
       object-fit: cover;
       object-position: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  // Jumbo
+  .jumbo {
+    height: 500px;
+
+    &__info-box {
+      height: 500px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+
+  // Why Choose US
+  .choose-us {
+    &__big-title {
+      font-size: 2.2rem;
+    }
+
+    &__main-text {
+      width: 100%;
+    }
+
+    &__info-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__info-box {
+      .choose-us__icon {
+        .fas,
+        .far {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  // Why Choose US
+  .vehicle-serviced {
+    &__grid-container {
+      flex-wrap: wrap;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      order: 1;
+    }
+    &__info-box {
+      order: 2;
     }
   }
 }
