@@ -1,0 +1,144 @@
+@import "variables";
+
+.contact {
+  // Embeded Map
+  .embeded-map {
+    margin-bottom: 3rem;
+
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+  }
+
+  //   Contact Detail
+  .contact-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    &__boxes {
+      .map {
+        color: $navy-blue;
+        font-size: 0.9rem;
+        margin-left: 5.5rem;
+        line-height: 1.8rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .fas,
+      .far {
+        color: $navy-blue;
+        font-size: 2.5rem;
+        margin-right: 1.5rem;
+      }
+    }
+
+    &__text {
+      font-size: 0.9rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  // Form
+
+  .form {
+    margin-bottom: 3rem;
+
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    // Left Field
+    &__left-field {
+      input {
+        width: 100%;
+        padding: 1rem;
+        color: rgb(37, 37, 37);
+        width: 100%;
+        border: 1px $light-grey solid;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          border: 1px grey solid;
+        }
+      }
+
+      input:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      ::placeholder {
+        font-size: 0.9rem;
+      }
+
+      .form__note {
+        margin-top: 3rem;
+        .form__notice {
+          font-size: 0.9rem;
+          line-height: 1.8rem;
+
+          span {
+            font-weight: 700;
+          }
+        }
+
+        .form__notice:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    // Right Field
+    &__right-field {
+      display: flex;
+      flex-direction: column;
+
+      textarea {
+        width: 100%;
+        height: 63%;
+        padding: 1rem;
+        border: 1px $light-grey solid;
+        outline: none;
+        margin-bottom: 3rem;
+        resize: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          border: 1px grey solid;
+        }
+      }
+
+      ::placeholder {
+        font-size: 0.9rem;
+      }
+
+      .form__btn {
+        font-size: 0.9rem;
+        background-color: $navy-blue;
+        color: #fff;
+        width: 30%;
+        padding: 1.2rem 0.8rem;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+      }
+    }
+  }
+}

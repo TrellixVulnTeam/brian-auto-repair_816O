@@ -2,13 +2,13 @@
 
 // Jumbo ---------/
 .jumbo {
-  background-image: url("../img/jumbo-img.jpeg");
+  background-image: url("../optimized-img/jumbo-img.jpeg");
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url("../img/jumbo-img.jpeg") no-repeat bottom center;
+    url("../optimized-img/jumbo-img.jpeg") no-repeat bottom center;
   background-size: cover;
   height: 600px;
 
@@ -240,8 +240,9 @@
   &__img {
     width: 100%;
     height: 600px;
-    background-image: url("../img/vehicle-serviced-img.jpeg");
-    background: url("../img/vehicle-serviced-img.jpeg") no-repeat bottom center;
+    background-image: url("../optimized-img/vehicle-serviced-img.jpeg");
+    background: url("../optimized-img/vehicle-serviced-img.jpeg") no-repeat
+      bottom center;
     background-size: cover;
     grid-column: 5/9;
   }

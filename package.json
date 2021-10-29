@@ -6,9 +6,12 @@
   "dependencies": {
     "node-sass": "^6.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "imagemin-cli": "^7.0.0"
+  },
   "scripts": {
-    "compile-sass": "node-sass sass/styles.scss  css/styles.css -w"
+    "compile-sass": "node-sass sass/styles.scss  css/styles.css -w",
+    "image-op": "imagemin img/* --out-dir=optimized-img"
   },
   "repository": {
     "type": "git",

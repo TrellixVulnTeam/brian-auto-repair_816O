@@ -1,6 +1,6 @@
 .jumbo {
-  background-image: url("../img/jumbo-img.jpeg");
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../img/jumbo-img.jpeg") no-repeat bottom center;
+  background-image: url("../optimized-img/jumbo-img.jpeg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%), url("../optimized-img/jumbo-img.jpeg") no-repeat bottom center;
   background-size: cover;
   height: 600px; }
   .jumbo__info-box {
@@ -173,8 +173,8 @@
 .vehicle-serviced__img {
   width: 100%;
   height: 600px;
-  background-image: url("../img/vehicle-serviced-img.jpeg");
-  background: url("../img/vehicle-serviced-img.jpeg") no-repeat bottom center;
+  background-image: url("../optimized-img/vehicle-serviced-img.jpeg");
+  background: url("../optimized-img/vehicle-serviced-img.jpeg") no-repeat bottom center;
   background-size: cover;
   grid-column: 5/9; }
 
@@ -287,6 +287,95 @@
       border-radius: 50%;
       object-fit: cover;
       object-position: center; }
+
+.contact .embeded-map {
+  margin-bottom: 3rem; }
+  .contact .embeded-map iframe {
+    width: 100%;
+    height: 500px; }
+
+.contact .contact-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem; }
+  .contact .contact-detail__boxes .map {
+    color: #002ea1;
+    font-size: 0.9rem;
+    margin-left: 5.5rem;
+    line-height: 1.8rem; }
+  .contact .contact-detail__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
+  .contact .contact-detail__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .contact .contact-detail__info .fas,
+    .contact .contact-detail__info .far {
+      color: #002ea1;
+      font-size: 2.5rem;
+      margin-right: 1.5rem; }
+  .contact .contact-detail__text {
+    font-size: 0.9rem;
+    line-height: 1.8rem; }
+
+.contact .form {
+  margin-bottom: 3rem; }
+  .contact .form__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; }
+  .contact .form__left-field input {
+    width: 100%;
+    padding: 1rem;
+    color: #252525;
+    width: 100%;
+    border: 1px #ebebeb solid;
+    outline: none;
+    transition: all 0.3s ease-in-out; }
+    .contact .form__left-field input:hover {
+      border: 1px grey solid; }
+  .contact .form__left-field input:not(:last-child) {
+    margin-bottom: 1.5rem; }
+  .contact .form__left-field ::placeholder {
+    font-size: 0.9rem; }
+  .contact .form__left-field .form__note {
+    margin-top: 3rem; }
+    .contact .form__left-field .form__note .form__notice {
+      font-size: 0.9rem;
+      line-height: 1.8rem; }
+      .contact .form__left-field .form__note .form__notice span {
+        font-weight: 700; }
+    .contact .form__left-field .form__note .form__notice:not(:last-child) {
+      margin-bottom: 1rem; }
+  .contact .form__right-field {
+    display: flex;
+    flex-direction: column; }
+    .contact .form__right-field textarea {
+      width: 100%;
+      height: 63%;
+      padding: 1rem;
+      border: 1px #ebebeb solid;
+      outline: none;
+      margin-bottom: 3rem;
+      resize: none;
+      transition: all 0.3s ease-in-out; }
+      .contact .form__right-field textarea:hover {
+        border: 1px grey solid; }
+    .contact .form__right-field ::placeholder {
+      font-size: 0.9rem; }
+    .contact .form__right-field .form__btn {
+      font-size: 0.9rem;
+      background-color: #002ea1;
+      color: #fff;
+      width: 30%;
+      padding: 1.2rem 0.8rem;
+      cursor: pointer;
+      outline: none;
+      border: 0; }
 
 a {
   text-decoration: none; }
