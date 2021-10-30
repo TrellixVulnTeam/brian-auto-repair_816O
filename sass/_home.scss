@@ -272,39 +272,16 @@
 
 //*************************************** Media Queries **********************************//
 
-// Ipad Pro
-@media only screen and (max-width: 1024px) {
-  // Jumbo
-  // .jumbo {
-  //   height: 500px;
-
-  //   &__info-box {
-  //     height: 500px;
-  //   }
-
-  //   &__title {
-  //     text-align: center;
-  //     font-size: 2.5rem;
-  //   }
-
-  //   &__text {
-  //     font-size: 1.1rem;
-  //   }
-  // }
-
+// Laptops
+@media only screen and (max-width: 1440px) {
   // Why Choose US
   .choose-us {
-    &__big-title {
-      font-size: 2.2rem;
-    }
-
     &__main-text {
-      width: 100%;
+      width: 90%;
     }
 
     &__info-container {
-      display: flex;
-      flex-wrap: wrap;
+      gap: 20px;
     }
 
     &__info-box {
@@ -324,22 +301,11 @@
 
   // Vehicle Serviced
   .vehicle-serviced {
-    &__grid-container {
-      flex-wrap: wrap;
-    }
-
-    &__container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
     &__img {
-      order: 1;
-      background-position: top left;
+      background-position: top center;
     }
 
     &__info-box {
-      order: 2;
       margin-left: 0;
     }
 
@@ -351,16 +317,69 @@
       width: 100%;
     }
   }
+}
 
-  // Brand
-  .brand {
-    &__container {
-      justify-content: center;
-      flex-wrap: wrap;
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  // Jumbo
+  .jumbo {
+    height: 500px;
+
+    &__info-box {
+      height: 500px;
     }
 
-    &__individual-brand:not(:last-child) {
-      margin-bottom: 1.5rem;
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+
+  // Why Choose US
+  .choose-us {
+    &__main-text {
+      width: 90%;
+    }
+
+    &__info-container {
+      gap: 20px;
+    }
+
+    &__info-box {
+      .choose-us__icon {
+        .fas,
+        .far {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  // Vehicle Serviced
+  .vehicle-serviced {
+    &__img {
+      background-position: top center;
+    }
+
+    &__info-box {
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      width: 100%;
     }
   }
 }
@@ -481,7 +500,7 @@
   // Why Choose US
   .choose-us {
     &__big-title {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     &__main-text {
@@ -530,7 +549,7 @@
     }
 
     &__title {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     &__text {
@@ -574,7 +593,7 @@
     }
 
     &__title {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     &__text {

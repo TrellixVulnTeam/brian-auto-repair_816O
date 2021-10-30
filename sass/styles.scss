@@ -20,8 +20,8 @@ a {
 }
 
 .container {
-  width: 60%;
   max-width: 1400px;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ a {
   }
 
   &__logo {
-    width: 35%;
+    width: 50%;
 
     a {
       font-size: 2rem;
@@ -299,6 +299,107 @@ a {
 
 //*************************************** Media Queries **********************************//
 
+// Laptops
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+
+  .header {
+    &__top-nav-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      width: 45%;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
+
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    &__top-nav-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      width: 47%;
+    }
+
+    &__logo a {
+      width: 47%;
+      font-size: 1.8rem;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  // Footer
+  .footer {
+    &__top-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__boxes {
+      justify-content: flex-start;
+
+      .fas,
+      .far {
+        margin-right: 2rem;
+      }
+
+      .fa-award {
+        margin-right: 2.5rem;
+      }
+
+      div {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__boxes:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__bottom-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__box {
+      width: 100%;
+
+      .footer__details--social-link a {
+        padding: 1.5rem;
+      }
+    }
+
+    &__box:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    &__details--time {
+      width: 70%;
+    }
+  }
+}
+
 // Ipad, Table
 @media only screen and (max-width: 768px) {
   .container {
@@ -376,9 +477,6 @@ a {
 
   // Footer
   .footer {
-    &__top-wrapper {
-    }
-
     &__boxes {
       align-items: flex-start;
 
@@ -547,6 +645,19 @@ a {
 // Small Mobile
 @media only screen and (max-width: 480px) {
   .header {
+    &__phone-number {
+      border-right: none;
+      border-left: none;
+    }
+
+    &__social-media {
+      border-right: none;
+    }
+
+    &__mail {
+      border-right: none;
+    }
+
     &__logo {
       width: 80%;
 

@@ -191,40 +191,54 @@
     object-fit: cover;
     object-position: center; }
 
-@media only screen and (max-width: 1024px) {
-  .choose-us__big-title {
-    font-size: 2.2rem; }
+@media only screen and (max-width: 1440px) {
   .choose-us__main-text {
-    width: 100%; }
+    width: 90%; }
   .choose-us__info-container {
-    display: flex;
-    flex-wrap: wrap; }
+    gap: 20px; }
   .choose-us__info-box .choose-us__icon .fas,
   .choose-us__info-box .choose-us__icon .far {
     font-size: 3rem; }
   .choose-us__title {
     font-size: 1rem;
     font-weight: 600; }
-  .vehicle-serviced__grid-container {
-    flex-wrap: wrap; }
-  .vehicle-serviced__container {
-    display: flex;
-    flex-wrap: wrap; }
   .vehicle-serviced__img {
-    order: 1;
-    background-position: top left; }
+    background-position: top center; }
   .vehicle-serviced__info-box {
-    order: 2;
     margin-left: 0; }
   .vehicle-serviced__title {
     font-size: 2.2rem; }
   .vehicle-serviced__text {
-    width: 100%; }
-  .brand__container {
-    justify-content: center;
-    flex-wrap: wrap; }
-  .brand__individual-brand:not(:last-child) {
-    margin-bottom: 1.5rem; } }
+    width: 100%; } }
+
+@media only screen and (max-width: 1024px) {
+  .jumbo {
+    height: 500px; }
+    .jumbo__info-box {
+      height: 500px; }
+    .jumbo__title {
+      text-align: center;
+      font-size: 2.5rem; }
+    .jumbo__text {
+      font-size: 1.1rem; }
+  .choose-us__main-text {
+    width: 90%; }
+  .choose-us__info-container {
+    gap: 20px; }
+  .choose-us__info-box .choose-us__icon .fas,
+  .choose-us__info-box .choose-us__icon .far {
+    font-size: 3rem; }
+  .choose-us__title {
+    font-size: 1rem;
+    font-weight: 600; }
+  .vehicle-serviced__img {
+    background-position: top center; }
+  .vehicle-serviced__info-box {
+    margin-left: 0; }
+  .vehicle-serviced__title {
+    font-size: 2.2rem; }
+  .vehicle-serviced__text {
+    width: 100%; } }
 
 @media only screen and (max-width: 768px) {
   .jumbo {
@@ -281,7 +295,7 @@
     .jumbo__text {
       font-size: 1.1rem; }
   .choose-us__big-title {
-    font-size: 2.2rem; }
+    font-size: 2rem; }
   .choose-us__main-text {
     width: 100%; }
   .choose-us__info-container {
@@ -305,7 +319,7 @@
     order: 2;
     margin-left: 0; }
   .vehicle-serviced__title {
-    font-size: 2.2rem; }
+    font-size: 2rem; }
   .vehicle-serviced__text {
     width: 100%; }
   .brand__container {
@@ -326,7 +340,7 @@
     order: 2;
     margin-left: 0; }
   .vehicle-serviced__title {
-    font-size: 2.2rem; }
+    font-size: 2rem; }
   .vehicle-serviced__text {
     width: 100%; }
   .vehicle-serviced__make-container {
@@ -534,8 +548,8 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 60%;
   max-width: 1400px;
+  width: 60%;
   margin: 0 auto; }
 
 .header__top-nav {
@@ -596,7 +610,7 @@ a {
   overflow-x: hidden; }
 
 .header__logo {
-  width: 35%; }
+  width: 50%; }
   .header__logo a {
     font-size: 2rem;
     font-weight: 800;
@@ -722,6 +736,58 @@ a {
   .copy__text {
     color: #949494;
     font-size: 0.9rem; }
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 80%; }
+  .header__top-nav-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .header__logo {
+    width: 45%; }
+  .header__hamburger {
+    display: none; } }
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 90%; }
+  .header__top-nav-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .header__logo {
+    width: 47%; }
+  .header__logo a {
+    width: 47%;
+    font-size: 1.8rem; }
+  .header__hamburger {
+    display: none; } }
+
+@media only screen and (max-width: 890px) {
+  .footer__top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer__boxes {
+    justify-content: flex-start; }
+    .footer__boxes .fas,
+    .footer__boxes .far {
+      margin-right: 2rem; }
+    .footer__boxes .fa-award {
+      margin-right: 2.5rem; }
+    .footer__boxes div {
+      font-size: 1.1rem; }
+  .footer__boxes:not(:last-child) {
+    margin-bottom: 2rem; }
+  .footer__bottom-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer__box {
+    width: 100%; }
+    .footer__box .footer__details--social-link a {
+      padding: 1.5rem; }
+  .footer__box:not(:last-child) {
+    margin-bottom: 2.5rem; }
+  .footer__details--time {
+    width: 70%; } }
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -860,6 +926,13 @@ a {
     width: 70%; } }
 
 @media only screen and (max-width: 480px) {
+  .header__phone-number {
+    border-right: none;
+    border-left: none; }
+  .header__social-media {
+    border-right: none; }
+  .header__mail {
+    border-right: none; }
   .header__logo {
     width: 80%; }
     .header__logo a {
