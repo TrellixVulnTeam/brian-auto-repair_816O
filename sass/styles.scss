@@ -9,6 +9,12 @@
 $red: #ad1010;
 $navy-blue: #001750;
 
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
@@ -338,7 +344,7 @@ a {
     display: block;
     background-color: #fff;
     width: 50%;
-    background-color: #fff;
+    height: 100vh;
     position: absolute;
     right: 0;
     z-index: 100;
@@ -361,6 +367,56 @@ a {
 
     &__link:not(:last-child) {
       border-bottom: 1px $light-grey solid;
+    }
+  }
+
+  // Footer
+  .footer {
+    &__top-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__boxes {
+      justify-content: flex-start;
+
+      .fas,
+      .far {
+        margin-right: 2rem;
+      }
+
+      .fa-award {
+        margin-right: 2.5rem;
+      }
+
+      div {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__boxes:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &__bottom-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__box {
+      width: 100%;
+
+      .footer__details--social-link a {
+        padding: 1.5rem;
+      }
+    }
+
+    &__box:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    &__details--time {
+      width: 70%;
     }
   }
 }

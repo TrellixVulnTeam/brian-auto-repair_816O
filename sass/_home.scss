@@ -179,7 +179,7 @@
     display: block;
     text-align: center;
     font-weight: 300;
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     line-height: 1.9rem;
     margin-bottom: 2.5rem;
@@ -319,7 +319,7 @@
     }
   }
 
-  // Why Choose US
+  // Vehicle Serviced
   .vehicle-serviced {
     &__grid-container {
       flex-wrap: wrap;
@@ -333,8 +333,30 @@
     &__img {
       order: 1;
     }
+
     &__info-box {
       order: 2;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  // Brand
+  .brand {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__individual-brand:not(:last-child) {
+      margin-bottom: 1.5rem;
     }
   }
 }

@@ -126,7 +126,7 @@
   display: block;
   text-align: center;
   font-weight: 300;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   line-height: 1.9rem;
   margin-bottom: 2.5rem; }
@@ -222,7 +222,17 @@
   .vehicle-serviced__img {
     order: 1; }
   .vehicle-serviced__info-box {
-    order: 2; } }
+    order: 2;
+    margin-left: 0; }
+  .vehicle-serviced__title {
+    font-size: 2.2rem; }
+  .vehicle-serviced__text {
+    width: 100%; }
+  .brand__container {
+    justify-content: center;
+    flex-wrap: wrap; }
+  .brand__individual-brand:not(:last-child) {
+    margin-bottom: 1.5rem; } }
 
 .about {
   margin-bottom: 3rem; }
@@ -409,6 +419,11 @@
       cursor: pointer;
       outline: none;
       border: 0; }
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative; }
 
 a {
   text-decoration: none; }
@@ -630,7 +645,7 @@ a {
     display: block;
     background-color: #fff;
     width: 50%;
-    background-color: #fff;
+    height: 100vh;
     position: absolute;
     right: 0;
     z-index: 100;
@@ -645,4 +660,29 @@ a {
       .mobile-menu__link:hover {
         color: #001750; }
     .mobile-menu__link:not(:last-child) {
-      border-bottom: 1px #ebebeb solid; } }
+      border-bottom: 1px #ebebeb solid; }
+  .footer__top-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer__boxes {
+    justify-content: flex-start; }
+    .footer__boxes .fas,
+    .footer__boxes .far {
+      margin-right: 2rem; }
+    .footer__boxes .fa-award {
+      margin-right: 2.5rem; }
+    .footer__boxes div {
+      font-size: 1.1rem; }
+  .footer__boxes:not(:last-child) {
+    margin-bottom: 2rem; }
+  .footer__bottom-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer__box {
+    width: 100%; }
+    .footer__box .footer__details--social-link a {
+      padding: 1.5rem; }
+  .footer__box:not(:last-child) {
+    margin-bottom: 2.5rem; }
+  .footer__details--time {
+    width: 70%; } }
