@@ -21,6 +21,7 @@ a {
 
 .container {
   width: 60%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -106,6 +107,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
+    overflow-x: hidden;
   }
 
   &__logo {
@@ -295,7 +297,128 @@ a {
   }
 }
 
-// Phone Size
+//*************************************** Media Queries **********************************//
+
+// Ipad, Table
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    position: relative;
+
+    &__top-nav-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__logo {
+      width: 70%;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__nav-links {
+      display: none;
+    }
+
+    &__hamburger {
+      text-align: right;
+      width: 20%;
+      display: block;
+      cursor: pointer;
+
+      .fas {
+        font-size: 2rem;
+        color: grey;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: $navy-blue;
+        }
+      }
+    }
+  }
+
+  // Mobile Menu
+  .mobile-menu {
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    transform: translate3d(100%, 0, 0);
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+
+    &__link {
+      display: block;
+      transition: all 0.3s ease-in-out;
+      padding: 1rem;
+
+      &:hover {
+        color: $navy-blue;
+      }
+    }
+
+    &__link:not(:last-child) {
+      border-bottom: 1px $light-grey solid;
+    }
+  }
+
+  // Footer
+  .footer {
+    &__top-wrapper {
+    }
+
+    &__boxes {
+      align-items: flex-start;
+
+      .fas,
+      .far {
+        margin-right: 2rem;
+      }
+
+      .fa-award {
+        margin-right: 2.5rem;
+      }
+
+      div {
+        font-size: 1.1rem;
+      }
+    }
+
+    &__bottom-wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__box {
+      width: 100%;
+
+      .footer__details--social-link a {
+        padding: 1.5rem;
+      }
+    }
+
+    &__box:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+
+    &__details--time {
+      width: 70%;
+    }
+  }
+}
+
+// Mobile
 @media only screen and (max-width: 600px) {
   .container {
     width: 90%;
@@ -310,7 +433,7 @@ a {
     }
 
     &__logo {
-      width: 60%;
+      width: 70%;
 
       a {
         font-size: 1.6rem;
@@ -417,6 +540,19 @@ a {
 
     &__details--time {
       width: 70%;
+    }
+  }
+}
+
+// Small Mobile
+@media only screen and (max-width: 480px) {
+  .header {
+    &__logo {
+      width: 80%;
+
+      a {
+        font-size: 1.6rem;
+      }
     }
   }
 }

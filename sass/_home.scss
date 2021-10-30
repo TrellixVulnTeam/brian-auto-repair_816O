@@ -270,6 +270,195 @@
   }
 }
 
+//*************************************** Media Queries **********************************//
+
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  // Jumbo
+  // .jumbo {
+  //   height: 500px;
+
+  //   &__info-box {
+  //     height: 500px;
+  //   }
+
+  //   &__title {
+  //     text-align: center;
+  //     font-size: 2.5rem;
+  //   }
+
+  //   &__text {
+  //     font-size: 1.1rem;
+  //   }
+  // }
+
+  // Why Choose US
+  .choose-us {
+    &__big-title {
+      font-size: 2.2rem;
+    }
+
+    &__main-text {
+      width: 100%;
+    }
+
+    &__info-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__info-box {
+      .choose-us__icon {
+        .fas,
+        .far {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  // Vehicle Serviced
+  .vehicle-serviced {
+    &__grid-container {
+      flex-wrap: wrap;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      order: 1;
+      background-position: top left;
+    }
+
+    &__info-box {
+      order: 2;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  // Brand
+  .brand {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__individual-brand:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Ipad, Tablet
+@media only screen and (max-width: 768px) {
+  // Jumbo
+  .jumbo {
+    height: 500px;
+
+    &__info-box {
+      height: 500px;
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+    }
+  }
+
+  // Why Choose US
+  .choose-us {
+    &__big-title {
+      font-size: 2.2rem;
+    }
+
+    &__main-text {
+      width: 100%;
+    }
+
+    &__info-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__info-box {
+      .choose-us__icon {
+        .fas,
+        .far {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  // Vehicle Serviced
+  .vehicle-serviced {
+    &__grid-container {
+      flex-wrap: wrap;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      order: 1;
+      background-position: top left;
+    }
+
+    &__info-box {
+      order: 2;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
+
+  // Brand
+  .brand {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__individual-brand:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Mobile
 @media only screen and (max-width: 600px) {
   // Jumbo
   .jumbo {
@@ -332,6 +521,7 @@
 
     &__img {
       order: 1;
+      background-position: top left;
     }
 
     &__info-box {
@@ -345,6 +535,56 @@
 
     &__text {
       width: 100%;
+    }
+  }
+
+  // Brand
+  .brand {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__individual-brand:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+// Small Mobile
+@media only screen and (max-width: 480px) {
+  // Vehicle Serviced
+  .vehicle-serviced {
+    &__grid-container {
+      flex-wrap: wrap;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      order: 1;
+    }
+
+    &__info-box {
+      order: 2;
+      margin-left: 0;
+    }
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__make-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
