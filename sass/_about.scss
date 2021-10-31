@@ -13,10 +13,6 @@
     margin-bottom: 3rem;
   }
 
-  &__title-text {
-    margin-left: 20%;
-  }
-
   &__top-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -43,6 +39,56 @@
   &__img {
     img {
       width: 100%;
+    }
+  }
+}
+
+//*************************************** Media Queries **********************************//
+
+// Ipad, Tablet
+@media only screen and (max-width: 768px) {
+  // About
+  .about {
+    &__top-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bottom-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      order: 1;
+    }
+
+    &__info {
+      order: 2;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  // About
+  .about {
+    &__top-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bottom-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      order: 1;
+    }
+
+    &__info {
+      order: 2;
     }
   }
 }

@@ -13,10 +13,6 @@
     margin-bottom: 3rem;
   }
 
-  &__title-text {
-    margin-left: 20%;
-  }
-
   &__top-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -56,6 +52,40 @@
       border-radius: 50%;
       object-fit: cover;
       object-position: center;
+    }
+  }
+}
+
+//*************************************** Media Queries **********************************//
+
+// Ipad, Tablet
+@media only screen and (max-width: 768px) {
+  // Reviews
+  .review {
+    &__top-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bottom-section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+  // Reviews
+  .review {
+    &__top-section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__bottom-section {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

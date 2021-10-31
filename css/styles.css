@@ -361,8 +361,6 @@
     background-color: #ebebeb;
     padding: 2rem 0;
     margin-bottom: 3rem; }
-  .about__title-text {
-    margin-left: 20%; }
   .about__top-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -381,6 +379,30 @@
   .about__img img {
     width: 100%; }
 
+@media only screen and (max-width: 768px) {
+  .about__top-section {
+    display: flex;
+    flex-direction: column; }
+  .about__bottom-section {
+    display: flex;
+    flex-direction: column; }
+  .about__img {
+    order: 1; }
+  .about__info {
+    order: 2; } }
+
+@media only screen and (max-width: 600px) {
+  .about__top-section {
+    display: flex;
+    flex-direction: column; }
+  .about__bottom-section {
+    display: flex;
+    flex-direction: column; }
+  .about__img {
+    order: 1; }
+  .about__info {
+    order: 2; } }
+
 .services {
   margin-bottom: 3rem; }
   .services__title {
@@ -389,8 +411,6 @@
     background-color: #ebebeb;
     padding: 2rem 0;
     margin-bottom: 3rem; }
-  .services__title-text {
-    margin-left: 20%; }
   .services__top-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -411,6 +431,30 @@
   .services__img img {
     width: 100%; }
 
+@media only screen and (max-width: 768px) {
+  .services__top-section {
+    display: flex;
+    flex-direction: column; }
+  .services__bottom-section {
+    display: flex;
+    flex-direction: column; }
+  .services__img {
+    order: 1; }
+  .services__info {
+    order: 2; } }
+
+@media only screen and (max-width: 600px) {
+  .services__top-section {
+    display: flex;
+    flex-direction: column; }
+  .services__bottom-section {
+    display: flex;
+    flex-direction: column; }
+  .services__img {
+    order: 1; }
+  .services__info {
+    order: 2; } }
+
 .review {
   margin-bottom: 3rem; }
   .review__title {
@@ -419,8 +463,6 @@
     background-color: #ebebeb;
     padding: 2rem 0;
     margin-bottom: 3rem; }
-  .review__title-text {
-    margin-left: 20%; }
   .review__top-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -450,6 +492,22 @@
       object-fit: cover;
       object-position: center; }
 
+@media only screen and (max-width: 768px) {
+  .review__top-section {
+    display: flex;
+    flex-direction: column; }
+  .review__bottom-section {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 600px) {
+  .review__top-section {
+    display: flex;
+    flex-direction: column; }
+  .review__bottom-section {
+    display: flex;
+    flex-direction: column; } }
+
 .contact .embeded-map {
   margin-bottom: 3rem; }
   .contact .embeded-map iframe {
@@ -459,7 +517,6 @@
 .contact .contact-detail {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 3rem; }
   .contact .contact-detail__boxes .map {
     color: #002ea1;
@@ -538,6 +595,54 @@
       cursor: pointer;
       outline: none;
       border: 0; }
+
+@media only screen and (max-width: 1024px) {
+  .contact .contact-detail {
+    flex-wrap: wrap;
+    margin-bottom: 5rem; } }
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .contact .contact-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; }
+  .contact .form__right-field .form__btn {
+    width: 40%; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .contact .embeded-map {
+    margin-bottom: 5rem; }
+  .contact .contact-detail {
+    flex-wrap: wrap;
+    margin-bottom: 5rem; }
+    .contact .contact-detail__boxes:last-child {
+      margin-top: 2rem; }
+  .contact .form__wrapper {
+    grid-template-columns: 1fr; } }
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .contact .embeded-map {
+    margin-bottom: 5rem; }
+  .contact .contact-detail {
+    flex-wrap: wrap;
+    margin-bottom: 5rem; }
+    .contact .contact-detail__boxes:last-child {
+      margin-top: 2rem; }
+  .contact .form__wrapper {
+    grid-template-columns: 1fr; } }
+
+@media only screen and (max-width: 480px) {
+  .contact .embeded-map {
+    margin-bottom: 5rem; }
+  .contact .contact-detail {
+    flex-wrap: wrap;
+    margin-bottom: 5rem; }
+    .contact .contact-detail__boxes:not(:last-child) {
+      margin-bottom: 2rem; }
+  .contact .form__wrapper {
+    grid-template-columns: 1fr; }
+  .contact .form__right-field .form__btn {
+    width: 50%; } }
 
 html,
 body {
@@ -805,7 +910,6 @@ a {
       display: none; }
     .header__hamburger {
       text-align: right;
-      width: 20%;
       display: block;
       cursor: pointer; }
       .header__hamburger .fas {
@@ -870,7 +974,6 @@ a {
       display: none; }
     .header__hamburger {
       text-align: right;
-      width: 20%;
       display: block;
       cursor: pointer; }
       .header__hamburger .fas {

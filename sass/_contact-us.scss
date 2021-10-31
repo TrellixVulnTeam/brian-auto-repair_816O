@@ -15,7 +15,6 @@
   .contact-detail {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 3rem;
 
     &__boxes {
@@ -138,6 +137,118 @@
         cursor: pointer;
         outline: none;
         border: 0;
+      }
+    }
+  }
+}
+
+//*************************************** Media Queries **********************************//
+
+// Ipad Pro
+@media only screen and (max-width: 1024px) {
+  // Contact
+  .contact {
+    .contact-detail {
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .contact {
+    .contact-detail {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+    }
+
+    .form {
+      &__right-field {
+        .form__btn {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+// Ipad, Tablet
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  // Contact
+  .contact {
+    .embeded-map {
+      margin-bottom: 5rem;
+    }
+
+    .contact-detail {
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+
+      &__boxes:last-child {
+        margin-top: 2rem;
+      }
+    }
+
+    .form {
+      &__wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  // Contact
+  .contact {
+    .embeded-map {
+      margin-bottom: 5rem;
+    }
+
+    .contact-detail {
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+
+      &__boxes:last-child {
+        margin-top: 2rem;
+      }
+    }
+
+    .form {
+      &__wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+// Small Mobile
+@media only screen and (max-width: 480px) {
+  // Contact
+  .contact {
+    .embeded-map {
+      margin-bottom: 5rem;
+    }
+
+    .contact-detail {
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+
+      &__boxes:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .form {
+      &__wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      &__right-field {
+        .form__btn {
+          width: 50%;
+        }
       }
     }
   }
