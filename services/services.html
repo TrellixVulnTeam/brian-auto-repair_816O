@@ -32,7 +32,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
   </head>
   <body>
     <!-- Header --------------->
@@ -60,6 +59,7 @@
                   target="_blank"
                 >
                   <i class="fab fa-facebook-f"></i>
+                  Facebook
                 </a>
               </div>
 
@@ -94,16 +94,18 @@
                 <a href="../index.html" class="header__link">Home</a>
               </li>
               <li>
-                <a href="../about/index.html" class="header__link">About</a>
+                <a href="../about/about.html" class="header__link">About</a>
               </li>
               <li>
-                <a href="index.html" class="header__link">Services</a>
+                <a href="services.html" class="header__link">Services</a>
               </li>
               <li>
-                <a href="../reviews/index.html" class="header__link">Reviews</a>
+                <a href="../reviews/reviews.html" class="header__link"
+                  >Reviews</a
+                >
               </li>
               <li>
-                <a href="../contact/index.html" class="header__link"
+                <a href="../contact/contact.html" class="header__link"
                   >Contact Us</a
                 >
               </li>
@@ -134,10 +136,19 @@
           <!-- Top Section -->
           <div class="services__top-section">
             <div class="services__img">
-              <img
-                src="../optimized-img/services-img-1.jpeg"
-                alt="Man working on a car"
-              />
+              <picture>
+                <source
+                  srcset="../optimized-img/services-img-1.webp"
+                  type="image/webp"
+                />
+
+                <img
+                  src="../optimized-img/services-img-1.jpeg"
+                  width="500"
+                  height="300"
+                  alt="Man working on a car"
+                />
+              </picture>
             </div>
 
             <div class="services__info">
@@ -187,10 +198,19 @@
             </div>
 
             <div class="services__img">
-              <img
-                src="../optimized-img/services-img-2.jpeg"
-                alt="A couple buying a car"
-              />
+              <picture>
+                <source
+                  srcset="../optimized-img/services-img-2.webp"
+                  type="image/webp"
+                />
+
+                <img
+                  src="../optimized-img/services-img-2.jpeg"
+                  width="500"
+                  height="300"
+                  alt="Mechanic working on a car"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -262,7 +282,7 @@
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                <i class="fab fa-facebook-f"></i>
+                Facebook
               </a>
             </div>
           </div>

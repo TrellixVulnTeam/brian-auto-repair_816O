@@ -30,7 +30,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/reset.css" />
   </head>
 
   <body>
@@ -59,6 +58,7 @@
                   target="_blank"
                 >
                   <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
                 </a>
               </div>
 
@@ -93,16 +93,20 @@
                 <a href="index.html" class="header__link">Home</a>
               </li>
               <li>
-                <a href="about/index.html" class="header__link">About</a>
+                <a href="about/about.html" class="header__link">About</a>
               </li>
               <li>
-                <a href="services/index.html" class="header__link">Services</a>
+                <a href="services/services.html" class="header__link"
+                  >Services</a
+                >
               </li>
               <li>
-                <a href="reviews/index.html" class="header__link">Reviews</a>
+                <a href="reviews/reviews.html" class="header__link">Reviews</a>
               </li>
               <li>
-                <a href="contact/index.html" class="header__link">Contact Us</a>
+                <a href="contact/contact.html" class="header__link"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
@@ -113,10 +117,10 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
       <a href="index.html" class="mobile-menu__link">Home</a>
-      <a href="about/index.html" class="mobile-menu__link">About</a>
-      <a href="services/index.html" class="mobile-menu__link">Services</a>
-      <a href="reviews/index.html" class="mobile-menu__link">Reviews</a>
-      <a href="contact/index.html" class="mobile-menu__link">Contact Us</a>
+      <a href="about/about.html" class="mobile-menu__link">About</a>
+      <a href="services/services.html" class="mobile-menu__link">Services</a>
+      <a href="reviews/reviews.html" class="mobile-menu__link">Reviews</a>
+      <a href="contact/contact.html" class="mobile-menu__link">Contact Us</a>
     </div>
 
     <!-- Jumbo Section --------------->
@@ -129,7 +133,7 @@
             the highest quality repair services from Brian’s Auto Repair.
           </div>
           <div class="jumbo__btn">
-            <a href="about/index.html">Learn More</a>
+            <a href="about/about.html">Learn More About Us</a>
           </div>
         </div>
       </div>
@@ -272,11 +276,25 @@
             </div>
 
             <div class="vehicle-serviced__btn">
-              <a href="about/index.html">Full List</a>
+              <a href="about/about.html">View Full List</a>
             </div>
           </div>
 
-          <div class="vehicle-serviced__img"></div>
+          <div class="vehicle-serviced__img">
+            <picture>
+              <source
+                srcset="optimized-img/vehicle-serviced-img.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="optimized-img/vehicle-serviced-img.jpeg"
+                width="400"
+                height="600"
+                alt="Mechanic working on car."
+              />
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -286,17 +304,35 @@
       <div class="container">
         <div class="brand__container">
           <div class="brand__individual-brand">
-            <img
-              src="optimized-img/carCareCenter-brand-img.jpeg"
-              alt="Car Care Center logo"
-            />
+            <picture>
+              <source
+                srcset="optimized-img/carCareCenter-brand-img.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="optimized-img/carCareCenter-brand-img.jpeg"
+                width="400"
+                height="300"
+                alt="Car Care Center logo"
+              />
+            </picture>
           </div>
 
           <div class="brand__individual-brand">
-            <img
-              src="optimized-img/andiesList-brand-img.jpeg"
-              alt="Andies List logo"
-            />
+            <picture>
+              <source
+                srcset="optimized-img/andiesList-brand-img.webp"
+                type="image/webp"
+              />
+
+              <img
+                src="optimized-img/andiesList-brand-img.jpeg"
+                width="200"
+                height="100"
+                alt="Andies List logo"
+              />
+            </picture>
           </div>
         </div>
       </div>
@@ -366,7 +402,7 @@
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                <i class="fab fa-facebook-f"></i>
+                Facebook
               </a>
             </div>
           </div>

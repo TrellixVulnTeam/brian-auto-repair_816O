@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>
-      Brian's Auto Repair - About Us Brians Auto, Sarasota Auto Repair, Sarasota
-      Car Service, Car Repair Sarasota
-    </title>
+    <title>Brian's Auto Repair - Brians Auto Contact Us</title>
     <meta
       name="description"
-      content="Brians Auto Repair is a Sarasota auto repair, Sarasota car service, and car repair Sarasota specialist."
+      content="Brians Auto Repair - Contact Us in Sarasota car service, Sarasota auto repair and car repair Sarasota specialist."
     />
     <meta
       name="keywords"
@@ -32,7 +29,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
   </head>
 
   <body>
@@ -61,6 +57,7 @@
                   target="_blank"
                 >
                   <i class="fab fa-facebook-f"></i>
+                  Facebook
                 </a>
               </div>
 
@@ -92,23 +89,23 @@
 
             <ul class="header__nav-links">
               <li>
-                <a href="../index.html" class="header__link"> Home</a>
+                <a href="../index.html" class="header__link">Home</a>
               </li>
               <li>
-                <a href="index.html" class="header__link">About</a>
+                <a href="../about/about.html" class="header__link">About</a>
               </li>
               <li>
-                <a href="../services/index.html" class="header__link"
+                <a href="../services/services.html" class="header__link"
                   >Services</a
                 >
               </li>
               <li>
-                <a href="../reviews/index.html" class="header__link">Reviews</a>
+                <a href="../reviews/reviews.html" class="header__link"
+                  >Reviews</a
+                >
               </li>
               <li>
-                <a href="../contact/index.html" class="header__link"
-                  >Contact Us</a
-                >
+                <a href="contact.html" class="header__link">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -119,93 +116,125 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu">
       <a href="../index.html" class="mobile-menu__link">Home</a>
-      <a href="index.html" class="mobile-menu__link">About</a>
+      <a href="../about/index.html" class="mobile-menu__link">About</a>
       <a href="../services/index.html" class="mobile-menu__link">Services</a>
       <a href="../reviews/index.html" class="mobile-menu__link">Reviews</a>
-      <a href="../contact/index.html" class="mobile-menu__link">Contact Us</a>
+      <a href="index.html" class="mobile-menu__link">Contact Us</a>
     </div>
 
-    <!-- About -->
-    <section class="about">
-      <div class="about__title">
-        <div class="container">
-          <div class="about__title-text">About us</div>
+    <!-- Contact -->
+    <section class="contact">
+      <div class="embeded-map">
+        <iframe
+          title="Brian's Auto Repair location on Google map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.3887064510986!2d-82.48918218445404!3d27.26969505119441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c34145917ee417%3A0x58850b23a39ea720!2s4103%20Clark%20Rd%20%238%2C%20Sarasota%2C%20FL%2034233!5e0!3m2!1sen!2sus!4v1635355968304!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- Contact Detail -->
+      <div class="container">
+        <div class="contact-detail">
+          <div class="contact-detail__boxes">
+            <div class="contact-detail__title">Call us Now At</div>
+
+            <div class="contact-detail__info">
+              <i class="fas fa-phone-alt"></i>
+              <div class="contact-detail__text">
+                Call us at <br />
+                (954) 456 4564
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-detail__boxes">
+            <div class="contact-detail__title">Brian's Auto Repair</div>
+
+            <div class="contact-detail__info">
+              <i class="far fa-map"></i>
+
+              <div class="contact-detail__text">
+                Sarasota, FL 34233: <br />
+                4103 Clark Rd #8
+              </div>
+            </div>
+
+            <a
+              class="map"
+              href="https://goo.gl/maps/625VHRuueg9nXdeRA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Display on Map</a
+            >
+          </div>
+
+          <div class="contact-detail__boxes">
+            <div class="contact-detail__title">A+ Rating BBB</div>
+
+            <div class="contact-detail__info">
+              <i class="fas fa-award"></i>
+              <div class="contact-detail__text">
+                You're receiving the best quality of repair.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Form -->
       <div class="container">
-        <div class="about__wrapper">
-          <!-- Top Section -->
-          <div class="about__top-section">
-            <div class="about__info">
-              <p class="about__text">
-                Brian’s Auto Repair has been providing quality auto services in
-                Sarasota for 27 years. Our customers remain loyal to us because
-                of our honesty, integrity and our consistent high quality
-                service. All our service professionals are highly trained and
-                Brian is a Master ASE Certified mechanic with experience on all
-                types of domestic as well as foreign vehicles. We provide a full
-                range of services for all styles of vehicles including; GM,
-                Ford, Chrysler, Honda, Toyota and all other European models.
-                Clients also bring their exotic, high performance and even
-                classic cars to us for routine repairs and service.
-              </p>
+        <form class="form">
+          <div class="form__wrapper">
+            <!-- Letf Field -->
+            <div class="form__left-field">
+              <input type="text" required placeholder="Your Name *" />
 
-              <p class="about__text">
-                Brian’s uses the most advance Auto diagnostic equipment to help
-                determine acute and intermittent mechanical problems and we use
-                only the highest quality replacement parts like AC Delco, GM,
-                Motorcraft and Timken. We can even help you to determine the
-                proper warranty services needed on your automobile before you
-                visit your dealer if your auto is still under its warranty
-                period.
-              </p>
+              <input type="email" required placeholder="Your Email *" />
+
+              <input
+                type="tel"
+                placeholder="Your Phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+
+              <input type="text" placeholder="Your VIN Number" />
+
+              <input type="text" placeholder="Your Plate" />
+
+              <div class="form__note">
+                <p class="form__notice">
+                  Note: In your <span>Message</span> include the date / time
+                  desired and a brief description of services / repairs needed.
+                </p>
+
+                <p class="form__notice">
+                  If requesting an <span>estimate</span> include either the
+                  V.I.N. or the license plate number (to decode the V.I.N) This
+                  will ensure the right parts for your estimate!
+                </p>
+              </div>
             </div>
 
-            <div class="about__img">
-              <img
-                src="../optimized-img/about-img-1.jpeg"
-                alt="Man working on a car"
-              />
+            <!-- Right Field -->
+            <div class="form__right-field">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                class="form__message"
+                required
+                placeholder="Message *"
+              ></textarea>
+
+              <input type="submit" class="form__btn" value="Send Message" />
             </div>
           </div>
-
-          <!-- Bottom Section -->
-          <div class="about__bottom-section">
-            <div class="about__img">
-              <img
-                src="../optimized-img/about-img-2.jpeg"
-                alt="A couple buying a car"
-              />
-            </div>
-
-            <div class="about__info">
-              <p class="about__text">
-                At Brian’s Auto Repair we understand the importance of your
-                time. No one likes the down time required to repair or maintain
-                their vehicle. From Check-in to Check-out, our experienced auto
-                care advisors and technicians will work to maintain and repair
-                your vehicle as quickly and affordably as possible to get you
-                back on the road again.
-              </p>
-
-              <p class="about__text">
-                Our convenient service times are from 8:00AM to 5:30 PM Monday
-                through Friday.
-              </p>
-
-              <p class="about__text">
-                Ph: 941-926-2526 <br />
-
-                <a
-                  href="mailto:briansautorepair@verizon.net"
-                  rel="noreferrer noopener"
-                >
-                  briansautorepair@verizon.net
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
@@ -234,7 +263,7 @@
             <i class="fas fa-award"></i>
             <div>
               A+ Rating BBB <br />
-              Best quality of repair services
+              Best quality of repair review
             </div>
           </div>
         </div>
@@ -261,6 +290,7 @@
                 <a
                   href="mailto:brian@briansrepair.com"
                   rel="noreferrer noopener"
+                  target="_blank"
                 >
                   brian@briansrepair.com
                 </a>
@@ -273,14 +303,14 @@
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                <i class="fab fa-facebook-f"></i>
+                Facebook
               </a>
             </div>
           </div>
 
           <div class="footer__box">
             <div class="footer__title">
-              Our Services
+              Our review
               <hr />
             </div>
 
