@@ -93,6 +93,10 @@
 
     &__img {
       order: 1;
+
+      picture img {
+        background-position: center left;
+      }
     }
 
     &__info {

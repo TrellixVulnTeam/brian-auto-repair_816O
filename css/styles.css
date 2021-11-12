@@ -457,6 +457,8 @@
     flex-direction: column; }
   .services__img {
     order: 1; }
+    .services__img picture img {
+      background-position: center left; }
   .services__info {
     order: 2; } }
 
