@@ -619,11 +619,6 @@
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .contact .embeded-map {
     margin-bottom: 5rem; }
-  .contact .contact-detail {
-    flex-wrap: wrap;
-    margin-bottom: 5rem; }
-    .contact .contact-detail__boxes:last-child {
-      margin-top: 2rem; }
   .contact .form__wrapper {
     grid-template-columns: 1fr; } }
 
